@@ -48,16 +48,17 @@
         </div>
         <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
           
-<form action="{{ route('loginAdmin') }}" method="post">
+<form action="login" method="POST">
 
+@csrf
 
-  <h2>Enter the Credentials  to Login</h2>
+  <h2>System Admin Panel</h2>
   <p class="text-center fw-bold mx-3 mb-0">Email:</p>
   <input type="email"  class="form-control form-control-lg"
-  placeholder="Enter a valid email address"  ><br>
+  placeholder="Enter a valid email address" name="email"   required><br>
   <p class="text-center fw-bold mx-3 mb-0">Password:</p>
   <input type="password" id="form3Example3" class="form-control form-control-lg"
-  placeholder="Enter a valid password" ><br>
+  placeholder="Enter a valid password" name="password" required ><br>
   <input type="submit"  value="login" name="login"  class="btn btn-primary btn-lg"
   style="padding-left: 2.5rem; padding-right: 2.5rem;">
 
@@ -65,13 +66,20 @@
 
 
 </form>
+
+
+<form action="login" method="POST">
+
+</form>
+
+
     
 
 
 
 
 
-          </form>
+
         </div>
       </div>
     </div>

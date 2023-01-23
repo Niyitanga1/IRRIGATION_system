@@ -48,8 +48,7 @@
         </div>
         <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
           
-<form action="{{ route('loginAdmin') }}" method="post">
-
+<form action="dashboard">
 
   <h2>Enter the Credentials  to Login</h2>
   <p class="text-center fw-bold mx-3 mb-0">Email:</p>
